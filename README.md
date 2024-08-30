@@ -1,1 +1,2 @@
-# mack-project-aplicando
+# Projeto de Prática Profissional em ADS
+## Grupo RSJ
