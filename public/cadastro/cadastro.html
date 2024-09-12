@@ -23,12 +23,15 @@
                 <form id="form-tela-cadastro" class="row g-3" novalidate>
                     <div class="row">
                         <div class="col-md-4 offset-md-2">
-                            <h2 style="color:#fff;">Preencha seu cadastro!</h4>
+                            <h2 style="color:#000000;">Preencha seu cadastro!</h4>
                         </div>
                     </div>
+                    
+                    
+
                     <div class="row">
                         <div class="col-md-4 offset-md-2">
-                            <input type="text" class="form-control" id="nome" name="nome"   placeholder="Nome completo" style="background: transparent;" minlength="2" required >
+                            <input type="text" class="form-control" id="nome" name="nome"   placeholder="Nome completo/Razão Social" style="background: transparent ; " minlength="2" required >
                             <div class="invalid-feedback">
                                 Por favor, insira um nome válido.   
                             </div>
@@ -40,7 +43,28 @@
                             </div>
                         </div>
                         
+                        
                     </div>
+
+                    <div class="row">
+                        <div class="col-md-4 offset-md-2">
+                            <input type="text" class="form-control" id="nome" name="cpnj"   placeholder="CNPJ" style="background: transparent; margin-top:15px;" minlength="2" required >
+                            <div class="invalid-feedback">
+                                Por favor, insira um nome válido.   
+                            </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <input type="text" class="form-control" id="phone"  name="endereco" placeholder="Endereço" style="background: transparent; margin-top:15px;" required>
+                            <div class="invalid-feedback">
+                                Por favor, insira um telefone válido.
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+
+                    
+
                     <div class="row">
                         
                         <div class="col-md-4 offset-md-2">
@@ -173,7 +197,7 @@
         
         
            <footer id="rodape">
-            <p>&copy; Powered by Luan</p>
+            
           </footer>
           <script src="/socket.io/socket.io.js"></script>
           <script src="cadastro.js" type="module"></script>
