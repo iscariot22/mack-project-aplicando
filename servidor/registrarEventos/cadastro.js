@@ -3,7 +3,7 @@ import { cadastrarUsuario, encontrarUsuario } from "../db/usuariosDb.js";
 function registrarEventosCadastro(socket, io) {
   socket.on("cadastrar_usuario", async (dados) => {
     
-    const usuario = await encontrarUsuario(dados.email,dados.tel);
+    const usuario = await encontrarUsuario(dados.email,dados.tel,dados.cnpj,dados.enderec);
     
     if (usuario === null || usuario == undefined) {
       const resultado = await cadastrarUsuario(dados);

@@ -9,8 +9,11 @@ form.addEventListener("submit", (evento) => {
   const email = form["email"].value.replace("(",'').replace(")",'').replace(' ','').replace('-','');
   const senha = form["inputSenha"].value;
   const tel = form["phone"].value.replace("(",'').replace(")",'').replace(' ','').replace('-','');
+  const cnpj = form["cnpj"].value;
+  const enderec = form["enderec"].value;
+
 
     if (validarCampos(form)) {
-      emitirCadastrarUsuario({ email, tel,senha });
+      emitirCadastrarUsuario({ email, tel, senha, cnpj, enderec });
     }
 });

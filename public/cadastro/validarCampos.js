@@ -65,6 +65,7 @@ function validarCampos(form) {
   }
   
   function marcarCampoInvalido(campo, mensagem) {
+    console.log(campo)
     campo.classList.add("campo-invalido");
   
     console.log("esta errado")
