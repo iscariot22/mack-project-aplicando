@@ -6,18 +6,6 @@ const tokenJwt = obterCookie("tokenJwt");
 console.log(tokenJwt);
 
 const btnLogout = document.getElementById("btnLogout");
-
-
-
-
-  
-mostrarImagemJogo();
-document.addEventListener('DOMContentLoaded', () => {
-  mostrarTituloJogo();
-  mostrarPrecoJogo();
-});
-
-  
   
 btnLogout.addEventListener("click", () => {
   removerCookie("tokenJwt");
